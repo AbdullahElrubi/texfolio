@@ -36,7 +36,7 @@ interface ProfileLinksEditorProps {
  * Extra developer-platform handles (LeetCode, CodeChef, Codeforces, …).
  *
  * The input asks for a username; on blur it is expanded to the platform's
- * exact canonical URL in place — the user sees `gautam-kr` become
+ * exact canonical URL in place — the user sees `abdullah-el` become
  * `https://leetcode.com/u/gautam-kr` before moving on, which is what makes the
  * stored link trustworthy. The zod schema runs the same normaliser at write,
  * so an imported or hand-edited value cannot bypass this.

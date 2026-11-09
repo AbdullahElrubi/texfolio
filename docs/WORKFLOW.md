@@ -12,7 +12,7 @@ Development workflows, pipeline documentation, and operational procedures for th
 
 ```bash
 # 1. Clone and install
-git clone https://github.com/theunstopabble/TexFolio.git
+git clone https://github.com/AbdullahElrubi/TexFolio.git
 cd TexFolio
 npm install
 

@@ -27,10 +27,10 @@ const formWith = (entries: Array<Partial<typeof blankEducation>>): ResumeFormDat
   customization: { primaryColor: "#2563EB", fontFamily: "sans" },
   sectionOrder: [],
   personalInfo: {
-    fullName: "Gautam Kumar",
+    fullName: "Abdullah Elrubi",
     email: "g@example.com",
-    phone: "+91 90000 00000",
-    location: "Bengaluru, India",
+    phone: "+90 531 499 63 28",
+    location: "Istanbul, Turkey",
   },
   summary: "",
   experience: [],

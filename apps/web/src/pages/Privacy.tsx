@@ -173,12 +173,12 @@ const Privacy = () => {
             <p>
               For privacy-related inquiries, contact the developer at{" "}
               <a
-                href="https://gautam-kr.vercel.app"
+                href="https://https://abdullahelrubi.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"
               >
-                gautam-kr.vercel.app
+                https://abdullahelrubi.com/
               </a>
             </p>
           </section>

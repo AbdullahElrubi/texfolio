@@ -33,7 +33,7 @@ export const downloadTextFile = (
 };
 
 /**
- * Human-friendly resume filename, e.g. "Gautam_Kumar_Resume.pdf".
+ * Human-friendly resume filename, e.g. "Abdullah__Resume.pdf".
  *
  * `ext` lets the JSON/TXT exports share the same naming as the PDF instead of
  * hardcoding ".pdf" in each caller.

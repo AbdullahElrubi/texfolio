@@ -4,19 +4,19 @@ import { JSDOM } from "jsdom";
 import { buildResumeFileName, triggerDownload } from "../src/lib/download.ts";
 
 test("buildResumeFileName: sanitises and falls back", () => {
-  assert.equal(buildResumeFileName("Gautam Kumar", null), "Gautam_Kumar_Resume.pdf");
+  assert.equal(buildResumeFileName("Abdullah Elrubi", null), "Abdullah__Resume.pdf");
   assert.equal(buildResumeFileName(null, "My Resume!"), "My_Resume_Resume.pdf");
   assert.equal(buildResumeFileName("", ""), "Resume_Resume.pdf");
   assert.equal(buildResumeFileName("  Spaces  &  Tabs  ", undefined), "Spaces_Tabs_Resume.pdf");
 });
 
 test("buildResumeFileName: ext selects the JSON/TXT export extension", () => {
-  assert.equal(buildResumeFileName("Gautam Kumar", null, "json"), "Gautam_Kumar_Resume.json");
-  assert.equal(buildResumeFileName("Gautam Kumar", null, ".txt"), "Gautam_Kumar_Resume.txt");
+  assert.equal(buildResumeFileName("Abdullah Elrubi", null, "json"), "Abdullah__Resume.json");
+  assert.equal(buildResumeFileName("Abdullah Elrubi", null, ".txt"), "Abdullah__Resume.txt");
   // A malformed/empty extension degrades to the default rather than producing
   // a trailing dot.
-  assert.equal(buildResumeFileName("Gautam Kumar", null, ""), "Gautam_Kumar_Resume.pdf");
-  assert.equal(buildResumeFileName("Gautam Kumar", null, "zip"), "Gautam_Kumar_Resume.zip");
+  assert.equal(buildResumeFileName("Abdullah Elrubi", null, ""), "Abdullah__Resume.pdf");
+  assert.equal(buildResumeFileName("Abdullah Elrubi", null, "zip"), "Abdullah__Resume.zip");
 });
 
 test("triggerDownload: creates, clicks and removes an <a download> (B3)", () => {
@@ -39,10 +39,10 @@ test("triggerDownload: creates, clicks and removes an <a download> (B3)", () => 
   (globalThis as Record<string, unknown>).document = document;
   (globalThis as Record<string, unknown>).HTMLElement = dom.window.HTMLElement;
 
-  triggerDownload("blob:http://localhost/abc-123", "Gautam_Kumar_Resume.pdf");
+  triggerDownload("blob:http://localhost/abc-123", "Abdullah__Resume.pdf");
 
   assert.equal(clicked.length, 1, "exactly one anchor click");
-  assert.equal(clicked[0].download, "Gautam_Kumar_Resume.pdf");
+  assert.equal(clicked[0].download, "Abdullah__Resume.pdf");
   assert.ok(clicked[0].href.includes("abc-123"));
   // Removed from the DOM after use (no stray anchors accumulating).
   assert.equal(document.body.querySelectorAll("a").length, 0);

@@ -6,9 +6,9 @@ const About = () => {
     <>
       <SeoMeta
         title="About TexFolio - AI-Powered LaTeX Resume Builder"
-        description="Learn about TexFolio - the AI-powered LaTeX resume builder by Gautam Kumar. Helping professionals create standout resumes with AI and LaTeX precision."
+        description="Learn about TexFolio - the AI-powered LaTeX resume builder by Abdullah Elrubi. Helping professionals create standout resumes with AI and LaTeX precision."
         canonicalUrl="https://texfolio.vercel.app/about"
-        keywords="about texfolio, AI resume builder, gautam kumar, latex resume, resume builder team"
+        keywords="about texfolio, AI resume builder, Abdullah Elrubi, latex resume, resume builder team"
         jsonLd={[personSchema(), organizationSchema]}
       />
 
@@ -86,7 +86,7 @@ const About = () => {
         {/* Creator */}
         <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-6 sm:p-8 border border-blue-100">
           <h2 className="text-2xl font-bold text-slate-900 mb-4">
-            Built by Gautam Kumar
+            Built by Abdullah Elrubi
           </h2>
           <div className="flex flex-col sm:flex-row gap-6 items-start">
             <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-3xl font-bold shrink-0">
@@ -95,7 +95,7 @@ const About = () => {
             <div>
               <p className="text-slate-700 leading-relaxed mb-4">
                 TexFolio is a solo project built by{" "}
-                <strong>Gautam Kumar</strong>, a Full-Stack Developer | Solo-shipped SaaS Products | AI Integration
+                <strong>Abdullah Elrubi</strong>, a Full-Stack Developer | Solo-shipped SaaS Products | AI Integration
                 Engineer. With expertise in React, TypeScript, LangChain,
                 MongoDB, and LaTeX, Gautam built TexFolio to demonstrate
                 production-level SaaS architecture while solving a real problem:
@@ -103,7 +103,7 @@ const About = () => {
               </p>
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="https://gautam-kr.vercel.app"
+                  href="https://https://abdullahelrubi.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm px-4 py-2 bg-white rounded-full border border-slate-200 font-medium text-slate-700 hover:border-blue-300 hover:text-blue-600 transition-all"
@@ -111,7 +111,7 @@ const About = () => {
                   Portfolio
                 </a>
                 <a
-                  href="https://github.com/theunstopabble"
+                  href="https://github.com/AbdullahElrubi"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm px-4 py-2 bg-white rounded-full border border-slate-200 font-medium text-slate-700 hover:border-blue-300 hover:text-blue-600 transition-all"
@@ -119,7 +119,7 @@ const About = () => {
                   GitHub
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/gautamkr62/"
+                  href="https://www.linkedin.com/in/abdullahelrubi//"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm px-4 py-2 bg-white rounded-full border border-slate-200 font-medium text-slate-700 hover:border-blue-300 hover:text-blue-600 transition-all"
@@ -138,7 +138,7 @@ const About = () => {
             LaTeX. Deployed on Vercel + Render.
           </p>
           <a
-            href="https://github.com/theunstopabble/TexFolio"
+            href="https://github.com/AbdullahElrubi/TexFolio"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline mt-1 inline-block"

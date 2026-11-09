@@ -90,7 +90,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="https://github.com/theunstopabble"
+                  href="https://github.com/AbdullahElrubi"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-blue-400 transition-colors"
@@ -100,7 +100,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/gautamkr62/"
+                  href="https://www.linkedin.com/in/abdullahelrubi//"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-blue-400 transition-colors"
@@ -110,7 +110,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://gautam-kr.vercel.app"
+                  href="https://https://abdullahelrubi.com/"
                   target="_blank"
                   rel="noopener"
                   className="hover:text-blue-400 transition-colors"
@@ -129,14 +129,14 @@ const Footer = () => {
           <p className="text-sm">
             Built by{" "}
             <a
-              href="https://gautam-kr.vercel.app"
+              href="https://https://abdullahelrubi.com/"
               target="_blank"
               rel="noopener"
               className="text-blue-400 hover:text-blue-300 font-semibold transition-colors"
-              title="Gautam Kumar — Full-Stack Developer | Solo-shipped SaaS Products | AI Integration
+              title="Abdullah Elrubi — Full-Stack Developer | Solo-shipped SaaS Products | AI Integration
 "
             >
-              Gautam Kumar
+              Abdullah Elrubi
             </a>
           </p>
         </div>

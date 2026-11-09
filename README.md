@@ -149,7 +149,7 @@ Follow these steps to set up TexFolio locally.
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/theunstopabble/TexFolio.git
+   git clone https://github.com/AbdullahElrubi/TexFolio.git
    cd TexFolio
    ```
 
@@ -472,11 +472,10 @@ Returns a complete JSON dump containing:
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-**Author:** [Gautam Kumar](https://gautam-kr.vercel.app/) — Full-Stack Developer | Solo-shipped SaaS Products | AI Integration
-<a href="https://linkedin.com/in/gautamkr62" target="_blank">
+**Author:** [Abdullah Elrubi](https://abdullahelrubi.com/) — Full-Stack Developer | Solo-shipped SaaS Products | AI Integration
+<a href="https://www.linkedin.com/in/abdullahelrubi/" target="_blank">
 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
 </a>
-**Website:** [Texfolio](https://texfolio.vercel.app/)
 
 ---
 
@@ -486,13 +485,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-## 🌐 More Projects by Gautam Kumar
-
-| Project            | Description                                         | Link                                                             |
-| ------------------ | --------------------------------------------------- | ---------------------------------------------------------------- |
-| **Portfolio**      | Personal portfolio & developer profile              | [gautam-kr.vercel.app](https://gautam-kr.vercel.app)             |
-| **InterviewMinds** | Production-grade AI Mock Interview Platform         | [interviewminds.vercel.app](https://interviewminds.vercel.app)   |
-| **SwadKart**       | Multi-vendor food delivery platform with AI chatbot | [swadkart.vercel.app](https://swadkart.vercel.app)               |
-| **Satark-AI**      | Deepfake detection & speaker verification platform  | [satark-deepfake.vercel.app](https://satark-deepfake.vercel.app) |
-
-📍 From Sitamarhi, Bihar · Currently in Jaipur, Rajasthan

@@ -1,10 +1,10 @@
 /**
  * Developer-platform profile links — username in, exact canonical URL out.
  *
- * The resume form takes a bare handle (`gautam-kr`), because typing
- * `https://github.com/gautam-kr` into a field labelled "GitHub" is exactly the
+ * The resume form takes a bare handle (`abdullah-el`), because typing
+ * `https://github.com/AbdullahElrubi-kr` into a field labelled "GitHub" is exactly the
  * kind of repetition users skip — and skipping it used to store
- * `gautam-kr`, which every renderer then turned into a dead `https://gautam-kr`.
+ * `abdullah-el`, which every renderer then turned into a dead `https://gautam-kr`.
  *
  * ONE source of truth: the zod schema (server, normalise-at-write), the form
  * inputs' blur handler (client, live feedback), and the preview/PDF/TXT
@@ -108,7 +108,7 @@ export const normalizeProfileLink = (
     if (withoutTrailingSlash.includes("/") && BARE_HOST_RE.test(withoutTrailingSlash)) {
       return `https://${withoutTrailingSlash}`;
     }
-    // People paste `in/gautam-kr` (the path LinkedIn shows in its own URL bar)
+    // People paste `in/abdullahelrubi` (the path LinkedIn shows in its own URL bar)
     // more often than the bare handle — drop the path segment first.
     const handle =
       platform === "linkedin"

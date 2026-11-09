@@ -1,9 +1,6 @@
 const platforms: Record<string, string> = {
   // Founder Portfolios & Personal Sites
-  "gautam-kr.vercel.app": "🌟 Gautam's Portfolio (gautam-kr.vercel.app)",
-  "gautam-portfolio.vercel.app": "🌟 Gautam's Portfolio",
-  "gautamkumar.dev": "🌟 Gautam's Portfolio (gautamkumar.dev)",
-  "theunstopabble.github.io": "🌟 Gautam's GitHub Pages",
+  "https://abdullahelrubi.com/": "🌟 Abdullah's Portfolio (https://abdullahelrubi.com/)",
 
   // Social & Professional Networks
   "linkedin.com": "💼 LinkedIn",
@@ -168,8 +165,8 @@ export function resolveReferral(source: string, opts: ReferralOptions = {}): str
   const clean = host.replace(/^(www|m|mobile)\./, "");
 
   // Founder portfolio direct check
-  if (clean === "gautam-kr.vercel.app" || clean.endsWith(".gautam-kr.vercel.app")) {
-    return "🌟 Gautam's Portfolio (gautam-kr.vercel.app)";
+  if (clean === "https://abdullahelrubi.com/" || clean.endsWith(".https://abdullahelrubi.com/")) {
+    return "🌟 Abdullah's Portfolio (https://abdullahelrubi.com/)";
   }
 
   // Google Search domains (e.g. google.com, google.co.in, google.co.uk)

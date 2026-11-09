@@ -102,7 +102,7 @@ app.get("/", (c) => {
   return c.json({
     success: true,
     message: "Welcome to TexFolio API 🚀 (Hono)",
-    docs: "https://github.com/theunstopabble/TexFolio",
+    docs: "https://github.com/AbdullahElrubi/TexFolio",
   });
 });
 

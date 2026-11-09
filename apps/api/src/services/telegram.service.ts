@@ -47,7 +47,7 @@ class TelegramService {
   }
 
   /**
-   * Get current timestamp formatted in Indian Standard Time (IST).
+   * Get current timestamp formatted in Turkish Standard Time (IST).
    */
   private getIstTime(): string {
     return new Date().toLocaleString("en-IN", {

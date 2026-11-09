@@ -12,11 +12,11 @@ import { personalInfoSchema, profileLinkSchema } from "@texfolio/shared/dist/sch
 test("normalizeProfileLink: bare username becomes the platform's exact URL", () => {
   assert.equal(
     normalizeProfileLink("github", "gautam-kr"),
-    "https://github.com/gautam-kr",
+    "https://github.com/AbdullahElrubi-kr",
   );
   assert.equal(
     normalizeProfileLink("linkedin", "gautam-kr"),
-    "https://www.linkedin.com/in/gautam-kr",
+    "https://www.linkedin.com/in/abdullahelrubi",
   );
   assert.equal(
     normalizeProfileLink("leetcode", "gautam_kr"),
@@ -35,18 +35,18 @@ test("normalizeProfileLink: bare username becomes the platform's exact URL", () 
 test("normalizeProfileLink: host without scheme gets https://", () => {
   assert.equal(
     normalizeProfileLink("github", "github.com/gautam-kr"),
-    "https://github.com/gautam-kr",
+    "https://github.com/AbdullahElrubi-kr",
   );
 });
 
 test("normalizeProfileLink: a pasted URL is kept, minus trailing slashes", () => {
   assert.equal(
-    normalizeProfileLink("github", "https://github.com/gautam-kr/"),
-    "https://github.com/gautam-kr",
+    normalizeProfileLink("github", "https://github.com/AbdullahElrubi-kr/"),
+    "https://github.com/AbdullahElrubi-kr",
   );
   assert.equal(
-    normalizeProfileLink("github", "  https://github.com/gautam-kr  "),
-    "https://github.com/gautam-kr",
+    normalizeProfileLink("github", "  https://github.com/AbdullahElrubi-kr  "),
+    "https://github.com/AbdullahElrubi-kr",
   );
 });
 
@@ -94,8 +94,8 @@ test("normalizeProfileLink: a dotted username stays a username on prefixed platf
   );
   // …and LinkedIn's pasted `in/handle` path is recognised as the handle.
   assert.equal(
-    normalizeProfileLink("linkedin", "in/gautam-kr"),
-    "https://www.linkedin.com/in/gautam-kr",
+    normalizeProfileLink("linkedin", "in/abdullahelrubi"),
+    "https://www.linkedin.com/in/abdullahelrubi",
   );
 });
 

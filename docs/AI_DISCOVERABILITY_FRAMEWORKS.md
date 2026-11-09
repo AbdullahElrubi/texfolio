@@ -35,7 +35,7 @@ infrastructure only:
 ```html
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="author" content="Gautam Kumar" />
+<meta name="author" content="Abdullah Elrubi" />
 <meta name="theme-color" content="#2563eb" />
 <meta name="google-site-verification" content="..." />
 <meta name="robots" content="index, follow" />
@@ -149,7 +149,7 @@ crawlers). It carries `name`, `url`, `description`, `applicationCategory`,
 — are injected at runtime by `SeoMeta` from `apps/web/src/lib/structuredData.ts`
 (see §4.1). All three Person blocks (`index.html` author,
 `organizationSchema.founder`, `personSchema()`) share
-`"@id": "https://gautam-kr.vercel.app"` so crawlers resolve them to a single entity.
+`"@id": "https://https://abdullahelrubi.com/"` so crawlers resolve them to a single entity.
 
 ---
 
@@ -233,11 +233,11 @@ Multiple interconnected schema.org types create a rich knowledge graph:
 
 // Organization (business entity — structuredData.ts)
 { "@type": "Organization", "name": "TexFolio",
-  "founder": { "@type": "Person", "@id": "https://gautam-kr.vercel.app" } }
+  "founder": { "@type": "Person", "@id": "https://https://abdullahelrubi.com/" } }
 
 // Person (creator / author — same @id in every block)
-{ "@type": "Person", "@id": "https://gautam-kr.vercel.app",
-  "name": "Gautam Kumar", "sameAs": ["GitHub", "LinkedIn", ...] }
+{ "@type": "Person", "@id": "https://https://abdullahelrubi.com/",
+  "name": "Abdullah Elrubi", "sameAs": ["GitHub", "LinkedIn", ...] }
 
 // Product (paid tier — Pricing.tsx)
 { "@type": "Product", "name": "TexFolio Pro", "offers": { "price": "499" } }
@@ -247,7 +247,7 @@ Multiple interconnected schema.org types create a rich knowledge graph:
 
 ```
 Organization
-  ├── founder → Person (Gautam Kumar)
+  ├── founder → Person (Abdullah Elrubi)
   ├── sameAs → GitHub Repository
   └── sameAs → LinkedIn Profile
 
@@ -265,10 +265,10 @@ WebApplication
 
 #### 3.3 Author Authority Signals
 
-- Personal portfolio: `https://gautam-kr.vercel.app`
-- GitHub: `https://github.com/theunstopabble`
-- LinkedIn: `https://www.linkedin.com/in/gautamkr62`
-- Code repository: `https://github.com/theunstopabble/TexFolio`
+- Personal portfolio: `https://https://abdullahelrubi.com/`
+- GitHub: `https://github.com/AbdullahElrubi`
+- LinkedIn: `https://www.linkedin.com/in/abdullahelrubi/`
+- Code repository: `https://github.com/AbdullahElrubi/TexFolio`
 
 These are referenced in JSON-LD `sameAs` arrays across all schema types, creating a verifiable entity trail that generative AI models use for attribution.
 
@@ -281,7 +281,7 @@ These are referenced in JSON-LD `sameAs` arrays across all schema types, creatin
 
 - Semantic HTML (h1 → h2 → h3 hierarchy)
 - Descriptive meta descriptions (<160 chars for snippet extraction)
-- Footer contains structured attribution ("Built by Gautam Kumar")
+- Footer contains structured attribution ("Built by Abdullah Elrubi")
 
 ---
 
@@ -314,9 +314,9 @@ export function personSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": "https://gautam-kr.vercel.app",
-    name: "Gautam Kumar",
-    url: "https://gautam-kr.vercel.app",
+    "@id": "https://https://abdullahelrubi.com/",
+    name: "Abdullah Elrubi",
+    url: "https://https://abdullahelrubi.com/",
     jobTitle: "Full-Stack Developer | Solo-shipped SaaS Products | AI Integration",
     description:
       "Full-stack developer and AI engineer specializing in React, TypeScript, LangChain, and LLM-powered applications.",
@@ -326,9 +326,9 @@ export function personSchema() {
       "Resume Optimization", "ATS Compatibility",
     ],
     sameAs: [
-      "https://github.com/theunstopabble",
-      "https://www.linkedin.com/in/gautamkr62",
-      "https://gautam-kr.vercel.app",
+      "https://github.com/AbdullahElrubi",
+      "https://www.linkedin.com/in/abdullahelrubi/",
+      "https://https://abdullahelrubi.com/",
     ],
   };
 }
@@ -362,7 +362,7 @@ This ensures individual resume pages are discoverable as personal entity pages.
 - Each schema object is self-contained with `@context` and `@type`
 - Entities link to each other through sameAs, author, founder references
 - All three `Person` blocks (`index.html` author, `organizationSchema.founder`,
-  `personSchema()`) share one `@id` (`https://gautam-kr.vercel.app`), so crawlers
+  `personSchema()`) share one `@id` (`https://https://abdullahelrubi.com/`), so crawlers
   merge them into a single entity instead of seeing duplicates
 
 #### 4.5 Structured Content for LLM Parsing
@@ -474,7 +474,7 @@ Demonstrate first-hand experience, deep expertise, authoritative presence, and t
 
 Demonstrated in:
 
-- **About page** (`apps/web/src/pages/About.tsx`): "TexFolio is a solo project built by Gautam Kumar... demonstrates production-level SaaS architecture"
+- **About page** (`apps/web/src/pages/About.tsx`): "TexFolio is a solo project built by Abdullah Elrubi... demonstrates production-level SaaS architecture"
 - **HomePage tech stats**: "React 19 + Hono v4 + LangGraph + NVIDIA NIM"
 
 #### 6.2 Expertise
@@ -497,24 +497,24 @@ Files demonstrating expertise:
 
 | Signal            | Implementation                               |
 | ----------------- | -------------------------------------------- |
-| Personal Brand    | `https://gautam-kr.vercel.app` portfolio     |
+| Personal Brand    | `https://https://abdullahelrubi.com/` portfolio     |
 | GitHub Presence   | `github.com/theunstopabble` with public code |
-| LinkedIn Profile  | `linkedin.com/in/gautamkr62`                 |
+| LinkedIn Profile  | `linkedin.com/in/abdullahelrubikr62`                 |
 | Open Source Code  | Full repository visible on GitHub            |
 | Third-party Links | sameAs arrays linking to verified profiles   |
-| Clear Attribution | "Built by Gautam Kumar" in Footer            |
+| Clear Attribution | "Built by Abdullah Elrubi" in Footer            |
 
 Schema representation:
 
 ```json
 {
   "@type": "Person",
-  "name": "Gautam Kumar",
-  "url": "https://gautam-kr.vercel.app",
+  "name": "Abdullah Elrubi",
+  "url": "https://https://abdullahelrubi.com/",
   "sameAs": [
-    "https://github.com/theunstopabble",
-    "https://www.linkedin.com/in/gautamkr62",
-    "https://gautam-kr.vercel.app"
+    "https://github.com/AbdullahElrubi",
+    "https://www.linkedin.com/in/abdullahelrubi/",
+    "https://https://abdullahelrubi.com/"
   ]
 }
 ```
@@ -553,7 +553,7 @@ TexFolio
 ├── Product: Templates, Pricing, About
 ├── Support: Contact, AI Interview Practice, Help
 └── Connect: GitHub, LinkedIn, Portfolio
-    └── Built by: Gautam Kumar (GitHub | LinkedIn)
+    └── Built by: Abdullah Elrubi (GitHub | LinkedIn)
 ```
 
 ---

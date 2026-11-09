@@ -13,7 +13,7 @@ import {
 
 /**
  * Username-or-link field: stores the canonical URL for the platform, whether
- * the user typed `gautam-kr`, `github.com/gautam-kr` or the full address.
+ * the user typed `abdullah-el`, `github.com/gautam-kr` or the full address.
  * The same function the form's blur handler runs, so what the user sees in the
  * input is byte-for-byte what gets stored.
  */

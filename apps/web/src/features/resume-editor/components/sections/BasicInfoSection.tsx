@@ -67,7 +67,7 @@ export const BasicInfoSection = ({
   const linkedinInvalid = !!errors.personalInfo?.linkedin;
   const githubInvalid = !!errors.personalInfo?.github;
 
-  /** `gautam-kr` → `https://github.com/gautam-kr` on blur: the stored value is
+  /** `abdullah-el` → `https://github.com/AbdullahElrubi-kr` on blur: the stored value is
    *  the canonical URL, and the user watches it become one. The schema runs
    *  the same normaliser at write for imported/legacy data. */
   const normalizeField = (field: "linkedin" | "github") => () => {

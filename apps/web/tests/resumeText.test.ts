@@ -16,12 +16,12 @@ const makeData = (overrides: Partial<ResumeFormData> = {}): ResumeFormData => ({
     "certifications",
   ],
   personalInfo: {
-    fullName: "Gautam Kumar",
+    fullName: "Abdullah Elrubi",
     email: "g@example.com",
-    phone: "+91 90000 00000",
-    location: "Bengaluru, India",
-    linkedin: "in/gautam",
-    github: "gautam",
+    phone: "+90 531 499 63 28",
+    location: "Istanbul, Turkey",
+    linkedin: "in/abdullahelrubi",
+    github: "AbdullahElrubi",
   },
   summary: "Ships accessible web apps.",
   experience: [
@@ -133,13 +133,13 @@ test("buildResumeText: editor's string-shaped description/skills both work", () 
 
 test("buildResumeText: header carries contact + links, ends with a newline", () => {
   const text = buildResumeText(makeData());
-  assert.ok(text.startsWith("Gautam Kumar"));
-  assert.ok(text.includes("g@example.com | +91 90000 00000"));
+  assert.ok(text.startsWith("Abdullah Elrubi"));
+  assert.ok(text.includes("g@example.com | +90 531 499 63 28"));
   // Handles are expanded to the canonical URLs, whatever form they were typed
-  // in (`in/gautam` is the path LinkedIn shows in its own address bar).
+  // in (`in/abdullahelrubi` is the path LinkedIn shows in its own address bar).
   assert.ok(
     text.includes(
-      "https://www.linkedin.com/in/gautam | https://github.com/gautam",
+      "https://www.linkedin.com/in/abdullahelrubi | https://github.com/AbdullahElrubi",
     ),
   );
   assert.ok(text.endsWith("\n"));
@@ -159,7 +159,7 @@ test("buildResumeText: empty resume still yields a usable header", () => {
       sectionOrder: [],
     }),
   );
-  assert.ok(text.startsWith("Gautam Kumar"));
+  assert.ok(text.startsWith("Abdullah Elrubi"));
   assert.equal(text.includes("SUMMARY"), false);
   assert.ok(text.endsWith("\n"));
 });

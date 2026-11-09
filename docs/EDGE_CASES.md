@@ -423,9 +423,9 @@ the created resume cannot drift apart.
 
 ### Username → Canonical Profile URL
 
-Link inputs ask for a username, not a URL: typing `gautam-kr` yields
-`https://github.com/gautam-kr`, `in/gautam-kr` yields
-`https://www.linkedin.com/in/gautam-kr`, and a pasted `github.com/x` gets its
+Link inputs ask for a username, not a URL: typing `abdullah-el` yields
+`https://github.com/AbdullahElrubi`, `in/abdullahelrubi` yields
+`https://www.linkedin.com/in/abdullahelrubi`, and a pasted `github.com/x` gets its
 scheme. The rule lives once — `normalizeProfileLink()` in
 `packages/shared/src/developerLinks.ts` — and runs at three points:
 

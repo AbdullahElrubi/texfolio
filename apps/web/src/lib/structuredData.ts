@@ -1,6 +1,6 @@
 const BASE_URL = "https://texfolio.vercel.app";
-const AUTHOR_URL = "https://gautam-kr.vercel.app";
-// One stable @id for Gautam Kumar across every schema block — the static
+const AUTHOR_URL = "https://https://abdullahelrubi.com/";
+// One stable @id for Abdullah Elrubi across every schema block — the static
 // WebApplication in index.html, personSchema() and organizationSchema.founder
 // all describe the same human, so crawlers merge them instead of seeing two
 // conflicting Person entities. It is the author's own site: a real, resolvable
@@ -36,18 +36,18 @@ export const organizationSchema = {
   founder: {
     "@type": "Person",
     "@id": PERSON_ID,
-    name: "Gautam Kumar",
+    name: "Abdullah Elrubi",
     url: AUTHOR_URL,
     jobTitle: "Full-Stack Developer | Solo-shipped SaaS Products | AI Integration",
     sameAs: [
-      "https://github.com/theunstopabble",
-      "https://www.linkedin.com/in/gautamkr62",
+      "https://github.com/AbdullahElrubi",
+      "https://www.linkedin.com/in/abdullahelrubi/",
       AUTHOR_URL,
     ],
   },
   sameAs: [
-    "https://github.com/theunstopabble/TexFolio",
-    "https://www.linkedin.com/in/gautamkr62",
+    "https://github.com/AbdullahElrubi/TexFolio",
+    "https://www.linkedin.com/in/abdullahelrubi/",
   ],
 };
 
@@ -120,14 +120,14 @@ export function personSchema() {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": PERSON_ID,
-    name: "Gautam Kumar",
+    name: "Abdullah Elrubi",
     url: AUTHOR_URL,
     jobTitle: "Full-Stack Developer | Solo-shipped SaaS Products | AI Integration",
     description:
       "Full-stack developer and AI engineer specializing in React, TypeScript, LangChain, and LLM-powered applications.",
     sameAs: [
-      "https://github.com/theunstopabble",
-      "https://www.linkedin.com/in/gautamkr62",
+      "https://github.com/AbdullahElrubi",
+      "https://www.linkedin.com/in/abdullahelrubi/",
       AUTHOR_URL,
     ],
     knowsAbout: [

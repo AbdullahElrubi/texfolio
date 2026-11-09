@@ -293,7 +293,7 @@ Retrieve a publicly shared resume by its `shareId`.
 
 **Telemetry & Founder Alerts:**
 When accessed, the server non-blockingly resolves:
-- **Referral source:** (e.g. LinkedIn, Gautam's Portfolio, ChatGPT, Claude, Google, etc. via `referer` header).
+- **Referral source:** (e.g. LinkedIn, Abdullah's Portfolio, ChatGPT, Claude, Google, etc. via `referer` header).
 - **Device & Browser:** (Laptop, Mobile, Tablet, OS, Browser via `user-agent` header).
 - **IP Address:** Client IP (via `x-forwarded-for` or `cf-connecting-ip`).
 - **Telegram Notification:** Dispatches real-time recruiter alert to `@TexFolio_bot` (debounced by 10s per shareId/IP).

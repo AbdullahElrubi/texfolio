@@ -99,8 +99,8 @@ Codeforces, HackerRank, Kaggle, GitLab, X, Behance, Dribbble, Stack Overflow):
 Defaults to `[]`; resumes predating the field simply lack it.
 
 **Profile links — username in, canonical URL out.**
-The form asks for a username (`gautam-kr`, or `in/gautam-kr` for LinkedIn) and
-stores `https://github.com/gautam-kr`. One source of truth —
+The form asks for a username (`abdullah-el`, or `in/abdullahelrubi` for LinkedIn) and
+stores `https://github.com/AbdullahElrubi`. One source of truth —
 `packages/shared/src/developerLinks.ts`, `normalizeProfileLink()` — runs in
 three places so they cannot drift: the zod schema (normalise-at-write, so API
 clients and imports are covered), the inputs' blur handler (the user watches

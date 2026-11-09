@@ -38,7 +38,7 @@ const TEMPLATES = [
     id: "developer",
     name: "Developer Pro",
     description:
-      "Ultra-compact 1-page design, small-caps headers, fine-tuned 9pt font. Gautam's exact template.",
+      "Ultra-compact 1-page design, small-caps headers, fine-tuned 9pt font. Abdullah's exact template.",
     color: "bg-indigo-50",
   },
 ] as const;

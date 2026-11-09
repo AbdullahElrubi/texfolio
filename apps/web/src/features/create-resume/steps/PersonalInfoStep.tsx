@@ -29,7 +29,7 @@ const PersonalInfoStep: React.FC<PersonalInfoStepProps> = ({
   errors,
   profileLinks,
 }) => {
-  /** `gautam-kr` → `https://github.com/gautam-kr` on blur, so the user sees
+  /** `abdullah-el` → `https://github.com/AbdullahElrubi-kr` on blur, so the user sees
    *  the real link before Next. The schema normalises the same way at write. */
   const normalizeField = (field: "linkedin" | "github") => () => {
     const raw = getValues(`personalInfo.${field}`);

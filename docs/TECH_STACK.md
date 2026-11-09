@@ -132,7 +132,7 @@ Complete technology inventory for the TexFolio platform with versions and ration
 
 | Technology | Purpose | Rationale |
 |:--|:--|:--|
-| Razorpay | Payment processing | Indian market support, webhook verification |
+| Razorpay | Payment processing | Turkish market support, webhook verification |
 | Brevo (Sendinblue) | Transactional email | PDF attachment delivery, reliable API |
 
 ---

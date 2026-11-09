@@ -174,7 +174,7 @@ const ResumePreview: React.FC<ResumePreviewProps> = ({
 
   const primaryColor = data.customization?.primaryColor || "#2563EB";
 
-  // ----- Developer: Gautam's exact LaTeX format (extarticle 9pt, Computer Modern, Small Caps, blue links) -----
+  // ----- Developer: Abdullah's exact LaTeX format (extarticle 9pt, Computer Modern, Small Caps, blue links) -----
   const developerContainerStyle = {
     fontFamily: "'Computer Modern Serif', 'Latin Modern Roman', serif",
     color: "#000000",

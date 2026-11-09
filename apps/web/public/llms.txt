@@ -12,8 +12,6 @@
 
 ## Creator
 
-- [Portfolio](https://gautam-kr.vercel.app): Gautam Kumar's personal site and projects
-- [GitHub](https://github.com/theunstopabble): Gautam's open-source repositories
-- [LinkedIn](https://www.linkedin.com/in/gautamkr62): Gautam's professional profile
-- Origin: Sitamarhi, Bihar, India
-- Current: Jaipur, Rajasthan, India
+- [Portfolio](https://https://abdullahelrubi.com/): Abdullah Elrubi's personal site and projects
+- [GitHub](https://github.com/AbdullahElrubi): Abdullah's open-source repositories
+- [LinkedIn](https://www.linkedin.com/in/abdullahelrubi/): Abdullah's professional profile
